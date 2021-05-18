@@ -22,7 +22,7 @@ def add_item(request):
         form = ItemForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('classic_list')
+            return redirect('/')
 
     form = ItemForm()
     context = {
